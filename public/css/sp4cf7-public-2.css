@@ -1,0 +1,205 @@
+/* ADD STRIPE PAYMENTS TO CONTACT FORM 7 */
+.sp4cf7-public-wrapper, 
+.sp4cf7-public-wrapper *, 
+.sp4cf7-public-wrapper *::before, 
+.sp4cf7-public-wrapper *::after {
+    box-sizing: border-box;
+}
+
+.sp4cf7-public-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 100%;
+}
+
+.sp4cf7-public-wrapper > * {
+    flex: 1;
+}
+
+.sp4cf7-public__items--item {
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.sp4cf7-public__items--item > * {
+    /*border: 1px solid red;*/
+    flex: 1 0 auto;
+    padding: 1rem;
+}
+
+.sp4cf7-public__items--item-img > img {
+    height: auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+.sp4cf7-public__items--item-total {
+    text-align: center;
+}
+
+.sp4cf7-public__items--item-info h3.sp4cf7-public__items--item-info-name,
+.sp4cf7-public__items--item-info h4.sp4cf7-public__items--item-info-sku {
+    font-weight: 700;
+    line-height: 1;
+}
+.sp4cf7-public__items--item-info h3.sp4cf7-public__items--item-info-name {
+    font-size: 1.25rem;
+}
+.sp4cf7-public__items--item-info h4.sp4cf7-public__items--item-info-sku {
+    font-size: 0.8125rem;
+}
+
+.sp4cf7-public__items--item-info p.sp4cf7-public__items--item-info-description {
+    text-transform: initial;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.sp4cf7-public__total {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.sp4cf7-public__strong {
+    font-weight: 600;
+}
+
+/*-------------------- ORDER SUMMARY ----------------------- */
+
+.sp4cf7-public__fee {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.sp4cf7-public__fee h3,
+.sp4cf7-public__fee h4 {
+    margin: 0 0 .5rem;
+}
+
+.sp4cf7-public__order-summary {
+    padding: 1rem;
+}
+
+.sp4cf7-public__order-summary--fees-desc {
+    font-size: 1.3em;
+}
+
+.sp4cf7-public__order-summary--fees-price {
+    font-size: 1.2em;
+}
+
+/* --------------- PAYMENT WRAPPER ---------------------- */
+.sp4cf7-public__payments--header {
+    align-items: center;
+    display: flex;
+}
+
+.sp4cf7-public__payments--header > h4 {
+    font-size: 1.5rem;
+}
+
+.sp4cf7-public__payments--header span {
+    background-color: #ff0;
+    border-radius: 5px;
+    color: #000;
+    font-size: .625rem;
+    font-weight: 600;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.sp4cf7-public__stripe-card-icon {
+    width: 100%;
+    height: auto;
+    max-width: 3.125rem;
+    padding: 0 3px;
+}
+
+
+.sp4cf7-public_payments--body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sp4cf7-public_payments--body > label {
+    flex: 0 0 100%;
+    padding: 0 0 1rem;
+}
+
+.sp4cf7-public_payments--body > div {
+    flex: 0 0 50%;
+}
+
+.sp4cf7-public__stripe-card-icon {
+    width: 100%;
+    height: auto;
+    max-width: 3.125rem;
+    padding: 0 3px;
+}
+
+.sp4cf7-public__payments--card-errors {
+    flex: 1 1 100%;
+    margin-top: 1em;
+}
+
+.sp4cf7-public__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* --------------- END PAYMENT WRAPPER ---------------------- */
+ /*----------------END  ORDER SUMMARY ----------------------- */
+
+/* ----------------- MEDIA QUERIES ------------------- */
+@media (max-width: 576px) {
+    .sp4cf7-public__fee {
+        flex-direction: column;
+    }
+}
+@media (min-width: 576px) {
+    .sp4cf7-public__items--item {
+        /*align-items: flex-start;*/
+        flex-direction: row;
+        /*flex-wrap: wrap;*/
+    }
+    .sp4cf7-public__items--item>* {
+        flex: 1 1 50%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .sp4cf7-public__items--item {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .sp4cf7-public__items--item > * {
+        flex: 0 1 9.375rem;
+    }
+    .sp4cf7-public__items--item-info {
+        flex: 5;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .sp4cf7-public__items--item-img {
+        flex: 0 1 12.5rem;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

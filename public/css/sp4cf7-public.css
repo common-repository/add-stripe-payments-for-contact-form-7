@@ -1,0 +1,232 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.sp4cf7-public-wrapper {
+	/*margin: 50px;*/
+}
+.sp4cf7-hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    width: 100%;
+    max-width: 100%;
+}
+
+.sp4cf7-border-1 {
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.sp4cf7-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    padding: 50px 30px;
+	width: 100%;
+}
+
+.sp4cf7-card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.sp4cf7-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.sp4cf7-col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.sp4cf7-justify-content-between {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.sp4cf7-my-auto {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.sp4cf7-media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+.sp4cf7-media-body p {
+    padding: 0 20px;
+}
+.sp4cf7-media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.sp4cf7-flex-column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.sp4cf7-media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+.sp4cf7-text-muted {
+    color: #6c757d ;
+}
+.sp4cf7-small {
+    font-size: 80%;
+    font-weight: 400;
+}
+.sp4cf7-b {
+	font-weight: bold;
+}
+.sp4cf7-col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.sp4cf7-card-icons-container {
+    width: 40%;
+    float: left;
+    padding: 4px 20px;
+}
+
+.sp4cf7-card-icons-container img {
+    max-width: 20%;
+    padding: 0px 5px;
+}
+.sp4cf7-card-element {
+    width: auto;
+}
+.sp4cf7-card-element-input {
+	width:55%;
+	float:left;
+}
+.sp4cf7-p-img {
+    padding-right: 30px;
+}
+.sp4cf7-p-name {
+    color: #666;
+    width: auto;
+}
+.sp4cf7-name {
+    font-size: 20px;
+    font-weight: 800;
+}
+.sp4cf7-p-sku {
+	font-size:13px;
+}
+.sp4cf7-p-description {
+	padding:10px 0 0;	
+}
+
+.sp4cf7-col-prod {
+    clear: both;
+    width: 100%;
+}
+
+.sp4cf7-card-error {
+    color: #f30808;
+	font-size:12px;
+	padding-top: 10px;
+
+}
+.sp4cf7-clear {
+    clear:both;
+	width:100%;
+}
+
+.sp4cf7-p-price {
+    color: #666;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.sp4cf7-test-mode {
+    padding: 5px;
+    background-color: #ff0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+	.sp4cf7-col-md-7 {
+	    -ms-flex: 0 0 58.333333%;
+	    flex: 0 0 58.333333%;
+	    max-width: 58.333333%;
+	}
+	.sp4cf7-media img {
+		max-width:30%;
+	}
+	.sp4cf7-card-icons-container {
+    width: 45%;
+    padding: 4px 0 0 20px;
+}
+	.sp4cf7-card-icons-container img {
+    max-width: 23%;
+    padding: 0px 1px;
+}
+}
+@media (max-width: 600px) {
+	.sp4cf7-card {
+    padding: 30px 30px 20px;
+}
+	.sp4cf7-media img {
+    max-width: 70%;
+    margin: auto;
+}
+	.sp4cf7-col {
+    flex-basis: auto;
+}
+	.sp4cf7-p-name {
+    width: auto;
+    padding-left: 0;
+}
+	.sp4cf7-name {
+    margin-top: 20px;
+}
+	.sp4cf7-p-price {
+		margin-top:10px;
+	}
+	.sp4cf7-card-element-input {
+    width: 100%;
+    float: none;
+}
+	.sp4cf7-card-icons-container {
+    width: 100%;
+    float: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+	.sp4cf7-card-icons-container img {
+    max-width: 23%;
+    padding: 0px 1px;
+}
+}
+
+@media (min-width: 576px) {
+	.sp4cf7-flex-sm-row {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+}

@@ -1,0 +1,350 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.sp4cf7-help-tip {
+	margin: 0 0 0 9px;
+    color: #666;
+    display: inline-block;
+    font-size: 1.1em;
+    font-style: normal;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    vertical-align: top;
+    width: 16px;
+}
+.sp4cf7-help-tip::after{
+	-webkit-font-smoothing:antialiased;
+	content:"";
+	cursor:help;
+	font-family: Dashicons;
+	font-variant:normal;
+	font-weight:400;
+	height:100%;
+	left:0;
+	line-height:1;
+	margin:0;
+	position:absolute;
+	speak:none;
+	text-align:center;
+	text-indent:0;
+	text-transform:none;
+	top:0;
+	width:100%;
+}
+
+.sp4cf7-update-pro {
+    color: #f44336;
+    display: inline-block;
+    font-size: 1.1em;
+    font-style: normal;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    vertical-align: top;
+    width: 16px;
+}
+
+.sp4cf7-update-pro.dashicons-before:before {
+	font-size: 25px;
+}
+
+/* Style inputs, select elements and textareas */
+.sp4cf7-settings .sp4cf7-form input[type=text], 
+.sp4cf7-settings .sp4cf7-form select, 
+.sp4cf7-settings .sp4cf7-form textarea,
+.sp4cf7-settings .sp4cf7-form .select2-container--default .select2-selection--single {
+  width: 95%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  height: auto;
+}
+
+.sp4cf7-settings .sp4cf7-form .select2-container--default .select2-selection--single {
+	width: 100%;
+}
+.sp4cf7-settings .sp4cf7-form .select2-container .select2-selection--single .select2-selection__rendered {
+	padding: 0;
+}
+.sp4cf7-settings .sp4cf7-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 13px;
+}
+/* Style the label to display next to the inputs */
+.sp4cf7-settings .sp4cf7-form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+.sp4cf7-settings .sp4cf7-form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.sp4cf7-settings .sp4cf7-form .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.sp4cf7-settings .sp4cf7-form .titledesc {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* Floating column for inputs: 75% width */
+.sp4cf7-settings .sp4cf7-form .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Floating column for inputs: 75% width */
+.sp4cf7-settings .sp4cf7-form .col-75 hr:last-child {
+  display: none;
+}
+
+.sp4cf7-settings .sp4cf7-form .form-field .sp4cf7-wpcf7-data:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sp4cf7-settings .sp4cf7-form .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.sp4cf7-settings .sp4cf7-form .col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.sp4cf7-settings .sp4cf7-form .form-field:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .sp4cf7-settings .sp4cf7-form .titledesc, 
+  .sp4cf7-settings .sp4cf7-form .col-75, 
+  .sp4cf7-settings .sp4cf7-form input[type=submit] {
+    width: 95%;
+    margin-top: 0;
+  }
+}
+
+
+/*checkbox styling*/
+.sp4cf7-settings .sp4cf7-form .switch {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: auto;
+}
+
+.sp4cf7-settings .sp4cf7-form .switch input {
+	display:none;
+}
+
+.sp4cf7-settings .sp4cf7-form .slider {
+	-webkit-transition: .4s;
+	background-color: #ccc;
+	border-radius: 34px;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+}
+
+.sp4cf7-settings .sp4cf7-form .slider:before {
+	-webkit-transition: .4s;
+	background-color: white;
+	border-radius: 50%;
+	bottom: 4px;
+	content: "";
+	height: 16px;
+	left: 4px;
+	position: absolute;
+	transition: .4s;
+	width: 16px;
+}
+
+.sp4cf7-settings .sp4cf7-form input:checked + .slider {
+	background-color: #2196F3;
+}
+
+.sp4cf7-settings .sp4cf7-form input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+.sp4cf7-settings .sp4cf7-form input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(25px);
+}
+
+.sp4cf7-settings .sp4cf7-form .slider:after {
+	content:'OFF';
+	color: white;
+	display: block;
+	position: absolute;
+	transform: translate(-10%,-50%);
+	top: 50%;
+	left: 50%;
+	font-size: 10px;
+	font-family: Verdana, sans-serif;
+}
+
+.sp4cf7-settings .sp4cf7-form input:checked + .slider:after {  
+	content:'ON';
+	transform: translate(-100%,-50%);
+}
+/*end checkbox styling*/
+
+
+.sp4cf7-settings .sp4cf7-form h4 {
+	font-weight: 600;
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.sp4cf7-settings .sp4cf7-form .sp4cf7-opaque {
+	position: relative;
+}
+
+.sp4cf7-settings .sp4cf7-form .sp4cf7-opaque .dynamic-wrapper-pro {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgba(251, 251, 251, .5);
+	z-index: 999;
+}
+
+.dynamic-only-pro {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+.dynamic-only-pro > div {
+	background-color: #2196F3;
+	border-radius: 5px;
+	color: #fff;
+	margin-bottom: 15px;
+	margin: auto;
+	opacity: 0.83;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: opacity 0.6s;
+	width: 30%;
+}
+.dynamic-only-pro a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.sp4cf7-upl,
+.sp4cf7-rmv {
+	margin-top: 5px;
+}
+.sp4cf7-img-container img {
+	max-width: 150px;
+	height: auto;
+	padding: 20px 0;
+}
+
+.sp4cf7-item-actions {
+	padding-top: 50px;
+	text-align: right;
+	width: 98.33333333%;
+}
+.sp4cf7-item-actions a:first-child {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.sp4cf7-item-actions .sp4cf7-btn, .sp4cf7-item-actions .sp4cf7-btn:hover, .sp4cf7-item-actions .sp4cf7-btn:focus {
+	color: #999;
+	border-color: #999;
+}
+.sp4cf7-item-actions .sp4cf7-btn:focus {
+    box-shadow: 0 0 0 1px #cfcfcf;
+}
+
+
+.sp4cf7-custom-theme-tooltip {
+    
+
+}
+/* Use this next selector to style things like font-size and line-height: */
+.sp4cf7-custom-theme-tooltip .tooltipster-content h3, 
+.sp4cf7-custom-theme-tooltip .tooltipster-content p {
+    color: #444;
+}
+
+.sp4cf7-custom-theme-tooltip .tooltipster-content h3 {
+    border-bottom: 1px solid #eee !important;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
+
+.sp4cf7-custom-theme-tooltip .tooltipster-box {
+    border-radius: 1px !important; 
+    border: 1px solid #eee !important;
+ 
+    background: #fff !important;
+    color: #222 !important;
+}
+
+/* Use this next selector to style things like font-size and line-height: */
+.sp4cf7-custom-theme-tooltip .tooltipster-content {
+    /*font: 16px/24px "Georgia", serif;*/
+    
+    padding: 8px 10px;
+    overflow: hidden;
+    border-left: 5px solid #2196F3;
+}
+
+/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
+.sp4cf7-custom-theme-tooltip .tooltipster-arrow .tooltipster-arrow-border {
+    /* border-color: ... !important; */
+    border-right-color: #2196F3 !important;
+}
+
+.sp4cf7-custom-theme-tooltip.tooltipster-right .tooltipster-arrow-background {
+    border-right-color: #2196F3 !important;
+}
